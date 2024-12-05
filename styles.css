@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.page-header .title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header .description {
+  font-size: 1.2rem;
+}
+
+/* Search Box */
+.search-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.input-group-lg .form-control {
+  font-size: 1.25rem;
+}
+
+.input-group-lg .btn {
+  font-size: 1.25rem;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Results Container */
+.results-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background-color: #218838;
+  color: white;
+  padding: 15px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .input-group-lg .form-control,
+  .input-group-lg .btn {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .page-header .title {
+    font-size: 2rem;
+  }
+
+  .page-header .description {
+    font-size: 1rem;
+  }
+}
